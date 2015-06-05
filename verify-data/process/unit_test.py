@@ -32,7 +32,6 @@ class VefifyJsonDataTest(unittest.TestCase):
             avg = float(obj["avg"])
             high = float(obj["high"])
         #verify the data
-            #self.assertTrue(avg>=low and high>=avg)
             if avg>=low and high>=avg:
                 obj["result"] = "sucess"
             else:
